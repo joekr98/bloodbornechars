@@ -1,0 +1,304 @@
+/*********** SETUP ***********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+div {
+    outline: none;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: auto;
+    margin: 0 auto;
+}
+/************ HEADINGS ********************/
+h1 {
+    margin-left: 40px;
+    font-size: 200%;
+    padding: 2%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) ,rgba(0, 0, 0, 0.3)) ,url(images/backg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*************WELCOME*************/
+.welcome {
+    margin: 15% 20% ;
+    font-size: 300%;
+    opacity: 1;
+    color: #fff;
+    line-height: 145%;
+}
+
+/******* CHARACTER MENU **************/
+
+.characters-showcase {
+    list-style: none;
+    width: 100%;
+}
+.characters-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.character-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+
+.character-photo img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.character-photo img:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    opacity: 0.4;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.character-name {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 25%;
+  right: 25%;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+
+}
+
+
+
+.img-wrap:hover .character-name {
+  visibility: visible;
+  opacity: 1;
+  display: inline-block;
+}
+
+
+
+/**************** GENERAL CHARACTER*******************/
+
+.character-description {
+    line-height: 145%;
+    font-size: 90%;
+    padding: 1%;
+}
+
+.character-details {
+    font-size: 85%;
+    font-style: italic;
+    padding: 10%;
+    line-height: 145%;
+    position: relative;
+}
+
+.character-details:before {
+    content: "\201C";
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.char-back {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.char-main {
+    width: 30%;
+    padding: 2%;
+    
+}
+
+
+/**************** HUNTER ****************/
+.hunter {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500) ,rgba(0, 0, 0, 0.500)) ,url(images/hunterback.jpg);
+}
+
+
+
+/*********** GEHRMAN *****************/
+
+.gehrman {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/gehrback.jpg);
+}
+
+/********* DOLL ******************/
+
+.doll {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/dollback.jpg);
+}
+
+/************* CROW *******************/
+
+.crow {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/crowback.png);
+}
+
+/********** ANNALISE ********************/
+
+.ann {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/annback.jpg);
+}
+
+/********* MARIA **********************/
+
+.maria {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/mariaback.jpg);
+}
+
+/************ DJURA ***************/
+
+.djura {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/djuraback.jpg);
+}
+
+/************ IOSEFKA *************/
+
+.iosefka {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700) ,rgba(0, 0, 0, 0.700)) ,url(images/iosefkaback.jpg);
+}
+
+/************** FOOTER ********************/
+
+footer {
+    background-color: rgb(0, 0, 0);
+    font-size: 50%;
+    padding: 2%;
+    color: rgb(136, 136, 136);
+    line-height: 145%;
+}
+
+/*********** STICKY NAV ******************/
+
+.sticky-nav {
+    z-index: 9999;
+    position: fixed;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 20px;
+   
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid rgb(139, 18, 18);
+    background-color: rgb(139, 18, 18);
+    font-size: 80%;
+    opacity: 0.85;
+    color: #fff;
+    transition: border 0.5s, background-color 0.5s;
+}
+
+.btn:hover {
+    border: 1px solid rgb(92, 15, 15);
+    background-color: rgb(92, 15, 15);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/************* ANIMATIONS ON SCROLL ********************/
+
+.js--wp-1,
+.js--wp-11,
+.js--wp-2,
+.js--wp-22,
+.js--wp-3,
+.js--wp-33,
+.js--wp-4,
+.js--wp-44,
+.js--wp-5,
+.js--wp-55,
+.js--wp-6,
+.js--wp-66,
+.js--wp-7,
+.js--wp-77,
+.js--wp-8,
+.js--wp-88 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-11.animated,
+.js--wp-2.animated,
+.js--wp-22.animated,
+.js--wp-3.animated,
+.js--wp-33.animated,
+.js--wp-4.animated,
+.js--wp-44.animated,
+.js--wp-5.animated,
+.js--wp-55.animated,
+.js--wp-6.animated,
+.js--wp-66.animated,
+.js--wp-7.animated,
+.js--wp-77.animated,
+.js--wp-8.animated,
+.js--wp-88.animated {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
