@@ -1,0 +1,22 @@
+{
+  "name": "bloodborne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joekr98/bloodbornechars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joekr98/bloodbornechars/issues"
+  },
+  "homepage": "https://github.com/joekr98/bloodbornechars#readme",
+  "dependencies": {
+    "waypoints": "^4.0.1"
+  }
+}
